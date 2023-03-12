@@ -1,0 +1,153 @@
+@font-face {
+  font-family: Drippy;
+  src: url("font/Drippy.ttf");
+}
+
+@font-face {
+  font-family: School;
+  src: url('font/School.ttf')
+}
+
+@font-face {
+  font-family: sf_archery_blackoblique;
+  src: url('font/SF_Archery_Black_Oblique-webfont.woff');
+}
+
+@keyframes rgbBackground {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  35%  {background-color: purple;}
+  50%  {background-color: blue;}
+  75%  {background-color: green;}
+  100% {background-color: red;}
+}
+
+@keyframes rgbText {
+  0%   {color: red;}
+  25%  {color: yellow;}
+  35%  {color: purple;}
+  50%  {color: blue;}
+  75%  {color: green;}
+  100% {color: red;}
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.body {
+  color: white;
+  background-color: #181818;
+}
+
+.button {
+  font-family: Drippy;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #424242;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 10px;
+  margin: 20px 10px 10px;
+  transition: transform .5s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.5);
+  background-color: #3D3D3D;
+  margin-left: 25px;
+  margin-right: 25px;
+  animation-name: rgbBackground;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.navigationbar {
+  text-align: center;
+}
+
+.titleclass {
+  text-align: center;
+  font-size:xx-large;
+  font-family: sf_archery_blackoblique;
+  animation-name: rgbText;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.textclass {
+  text-align: center;
+  font-family: sf_archery_blackoblique;
+}
+
+
+img {
+  display: block;
+}
+
+ul li {
+  
+  text-decoration: none;
+  list-style: inside;
+  display:block;
+  padding:0 40%;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+ul li a {
+  font-family: School;
+  color: grey;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+  color:yellow
+}
+
+p {
+  text-align: center;
+}
+
+body footer {
+  margin-top: 50px;
+}
+
+.hobbies  {
+  margin-top:25px;
+  width:50%;
+  margin-left: 25%;
+  text-align: center;
+}
+
+.ui.cards {
+  display: flex;
+  margin: -0.875em -0.5em;
+  flex-wrap: wrap;
+}
+
+.ui.card, .ui.cards>.card {
+  max-width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  min-height: 0;
+  background: #fff;
+  padding: 0;
+  border: 2px solid #e9eef2;
+  border-radius: 0.5rem;
+  box-shadow: none;
+  transition: box-shadow .1s ease,transform .1s ease;
+  z-index: "";
+}
+
+.ui.image {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  background-color: transparent;
+}
